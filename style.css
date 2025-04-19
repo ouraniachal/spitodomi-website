@@ -151,3 +151,51 @@
 .social-icons{
     font-size: 30px;
 }
+
+.headingUnderline {
+    display: inline-block;
+    position: relative;
+}
+
+.headingUnderline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 4px;
+    background-color: #E21F24;
+    border-radius: 2px;
+}
+
+.checkList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 10px;
+}
+
+.swiper-slide img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #E21F24;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #E21F24;
+}
